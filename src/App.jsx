@@ -580,14 +580,18 @@ function App() {
 
                 {/* --- Call to Action Button --- */}
                 <div className="no-print">
-                    <button
-                        onClick={() => window.location.href = '#contact-us'} // Example action
+                    {/* --- UPDATED: Changed to <a> tag and updated href --- */}
+                    <a
+                        href="https://api.leadconnectorhq.com/widget/booking/9rk5cHU2aY3skvtraBB7" // Specific URL
+                        target="_blank" // Optional: Open in new tab
+                        rel="noopener noreferrer" // Security best practice for target="_blank"
                         // Using Brand Green (lime-500)
-                        className="w-full font-bold py-3 px-4 rounded transition duration-200 ease-in-out text-white shadow-md hover:shadow-lg bg-lime-500 hover:bg-lime-600 cursor-pointer text-lg"
+                        className="block w-full text-center font-bold py-3 px-4 rounded transition duration-200 ease-in-out text-white shadow-md hover:shadow-lg bg-lime-500 hover:bg-lime-600 cursor-pointer text-lg"
                     >
                         Let's Discuss Your Results
-                    </button>
+                    </a>
                 </div>
+
 
                 {/* --- Chart Card --- */}
                 <Card className="border border-gray-200 print-shadow-none print-border-none">
@@ -853,8 +857,11 @@ function App() {
                     Print Results
                   </button>
                   {/* Discuss Results Link Button - Using Brand Green */}
+                  {/* --- UPDATED: href attribute --- */}
                   <a
-                    href="#appointment-calendar" // Placeholder URL
+                    href="https://api.leadconnectorhq.com/widget/booking/9rk5cHU2aY3skvtraBB7" // Specific URL
+                    target="_blank" // Optional: Open in new tab
+                    rel="noopener noreferrer" // Security best practice for target="_blank"
                     className="bg-lime-500 hover:bg-lime-600 text-white font-bold py-2 px-4 rounded transition duration-200 ease-in-out shadow hover:shadow-md" // Brand Green
                   >
                     Let's Discuss Your Results
